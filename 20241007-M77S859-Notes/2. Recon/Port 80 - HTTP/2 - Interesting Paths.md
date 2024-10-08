@@ -53,4 +53,4 @@ Password may be encoded hash
 Used Chat GPT to Validate and the example was oddly the same hash:
 
 Yes, that's correct! The hash `d033e22ae348aeb5660fc2140aec35850c4da997` is the **SHA-1 hash** of the string **`admin`**.
-![[../Images/Pasted image 20241007162537.png]]
+![../Images/Pasted image 20241007162537.png](<../Images/Pasted image 20241007162537.png>)

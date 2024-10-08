@@ -10,7 +10,7 @@ http://10.129.201.192/data/other/logs/failedlogins.log
 s
 sudo sh -c 'echo "10.129.201.192 gettingstarted.htb" >> /etc/hosts'
 
-![[../Images/Pasted image 20241007141415.png]]
+![../Images/Pasted image 20241007141415.png](<../Images/Pasted image 20241007141415.png>)
 
 ```
 whatweb http://10.129.201.192
@@ -22,7 +22,7 @@ whatweb http://10.129.201.192
 http://10.129.201.192 [200 OK] AddThis, Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[10.129.201.192], Script[text/javascript], Title[Welcome to GetSimple! - gettingstarted]    
 ```
 
-![[../Images/Screenshot_2024-10-07_11_56_34.png]]
+![../Images/Screenshot\_2024-10-07\_11\_56\_34.png](<../Images/Screenshot_2024-10-07_11_56_34.png>)
 
 ## Metasploit
 
@@ -48,10 +48,10 @@ Matching Modules
 Interact with a module by name or index. For example info 1, use 1 or use exploit/multi/http/getsimplecms_unauth_code_exec                                                                                                            
 ```
 
-![[../Images/Pasted image 20241007144838.png]]
+![../Images/Pasted image 20241007144838.png](<../Images/Pasted image 20241007144838.png>)
 
 Which allows us to grab the first capture flag
-![[../Images/Pasted image 20241007145121.png]]
+![../Images/Pasted image 20241007145121.png](<../Images/Pasted image 20241007145121.png>)
 ## Fuzzing
 
 ```

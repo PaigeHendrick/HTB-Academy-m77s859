@@ -22,19 +22,19 @@ Matching Modules
 Interact with a module by name or index. For example info 1, use 1 or use exploit/multi/http/getsimplecms_unauth_code_exec                                                                                                            
 ```
 
-![[../2. Recon/Images/Pasted image 20241007144838.png]]
+![../2. Recon/Images/Pasted image 20241007144838.png](<../2. Recon/Images/Pasted image 20241007144838.png>)
 
 This attack is successful and we are now username: www-data, Which allows us to grab the first capture flag
-![[../2. Recon/Images/Pasted image 20241007145121.png]]
+![../2. Recon/Images/Pasted image 20241007145121.png](<../2. Recon/Images/Pasted image 20241007145121.png>)
 
-![[../2. Recon/Images/Pasted image 20241007145605.png]]
+![../2. Recon/Images/Pasted image 20241007145605.png](<../2. Recon/Images/Pasted image 20241007145605.png>)
 
 Following attack we execute the command below to identify any other potential paths for privilege escalation
 ```
 run post/multi/recon/local_exploit_suggester
 ```
 
-![[../2. Recon/Images/Pasted image 20241007170158.png]]
+![../2. Recon/Images/Pasted image 20241007170158.png](<../2. Recon/Images/Pasted image 20241007170158.png>)
 
 Check for sudo powers
 ```
@@ -57,7 +57,7 @@ The sudo configuration you're looking at allows specific users to run certain co
 
 Upload reverseshell.php to data/uploads location
 
-![[../2. Recon/Images/Pasted image 20241007214044.png]]
+![../2. Recon/Images/Pasted image 20241007214044.png](<../2. Recon/Images/Pasted image 20241007214044.png>)
 
 
 
