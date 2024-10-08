@@ -7,8 +7,11 @@ http://10.129.6.57/data/cache/2a4c6447379fba09620ba05582eb61af.txt
 
 Logs invalid logins!!
 http://10.129.201.192/data/other/logs/failedlogins.log
-
+s
 sudo sh -c 'echo "10.129.201.192 gettingstarted.htb" >> /etc/hosts'
+
+![[/2. Recon/Images/Pasted image 20241007141415]]
+
 
 ![[Pasted image 20241007141415.png]]
 
