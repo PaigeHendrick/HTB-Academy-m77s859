@@ -10,7 +10,7 @@ http://10.129.201.192/data/other/logs/failedlogins.log
 s
 sudo sh -c 'echo "10.129.201.192 gettingstarted.htb" >> /etc/hosts'
 
-![[/2. Recon/Images/Pasted image 20241007141415]]
+![/2. Recon/Images/Pasted image 20241007141415](https://github.com/PaigeHendrick/HTB-Academy-m77s859/blob/main/20241007-M77S859-Notes/2.%20Recon/Images/Pasted%20image%2020241007141415.png)
 
 
 ![[Pasted image 20241007141415.png]]
