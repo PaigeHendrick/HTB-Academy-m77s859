@@ -33,7 +33,7 @@
 
 After using Password Reset using admin, another file was placed on the lan.
 
-```
+```console
 ┌──(paige㉿PH-LT02)-[~]
 └─$ curl -s  http://10.129.201.192/data/users/admin.xml.reset | xmllint --format - 
 <?xml version="1.0" encoding="UTF-8"?>

