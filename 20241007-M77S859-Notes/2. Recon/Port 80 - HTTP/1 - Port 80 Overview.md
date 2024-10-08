@@ -12,7 +12,6 @@ sudo sh -c 'echo "10.129.201.192 gettingstarted.htb" >> /etc/hosts'
 
 ![[Pasted image 20241007141415.png]]
 
-
 ```
 whatweb http://10.129.201.192
 ```

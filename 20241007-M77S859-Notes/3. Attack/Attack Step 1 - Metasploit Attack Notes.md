@@ -57,9 +57,12 @@ The sudo configuration you're looking at allows specific users to run certain co
 
 Upload reverseshell.php to data/uploads location
 
-![[Pasted image 20241007184600.png]]
+![[Pasted image 20241007214044.png]]
+
+
 
 ```
 curl http://10.129.42.249/data/uploads/reverseshell.php
 ```
 
+Validate Foothold, and proceed to next steps
